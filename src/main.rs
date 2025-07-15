@@ -43,3 +43,22 @@ fn main() -> Result<()> {
     }
     Ok(())
 }
+
+# Using a local template
+git clone https://github.com/username-on-github/mytemplate.git $HOME/mytemplate # Clone any template
+cargo generate --path $HOME/mytemplate # Use it locally
+# for gitlab.com
+cargo generate gl:username-on-gitlab/mytemplate # translates to https://gitlab.com/username-on-gitlab/mytemplate.git
+# or for bitbucket.org
+cargo generate bb:username-on-bitbucket/mytemplate # translates to https://bitbucket.org/username-on-bitbucket/mytemplate.git
+# or for github.com
+cargo generate gh:username-on-github/mytemplate # translates to https://github.com/username-on-github/mytemplate.git
+# or for git.sr.ht
+cargo generate sr:username-on-sourcehut/mytemplate # translates to https://git.sr.ht/~username-on-sourcehut/mytemplate (note the tilde)
+
+cargo generate --git https://github.com/username-on-github/mytemplate.git --name myproject
+
+# Git over SSH
+cargo generate --git git@github.com:weltbester/rust_read_from_file --name mywasm
+
+
