@@ -1,10 +1,12 @@
 [package]
-name = "rust_read_from_file"
+name = "{{ crate_name }}"
+features = "{{ features }}"
+environment = "{{ environment }}"
 version = "0.1.0"
 edition = "2024"
-authors = ["Georg Pohl, georgpohl@gmx.de"]
+authors = ["{{ authors }}"]
 description = "Your project description"
-repository = "https://github.com/weltbester/rust_template.git"
+repository = "https://github.com/weltbester/{{ crate_name }}.git"
 license = "MIT"
 
 [dependencies]
