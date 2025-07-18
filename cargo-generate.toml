@@ -2,8 +2,8 @@
 project_name = { prompt = "Enter project name", default = "my_project", type = "string" }
 environment = { prompt = "Which environment?", choices = ["dev", "prod"], default = "dev", type = "string"}
 features = { prompt = "Include features?", choices = ["serde", "logging"], default = ["serde"], type = "array"}
-use_git = { prompt = "Initialize Git repository?", default = true, type = "bool" }
-phone_number = { prompt = "What's your phone number?", type = "string", regex = "^[0-9]+$" }
+use_git = { prompt = "Initialize Git repository?", default = false, type = "bool" }
+phone_number = { prompt = "What's your phone number?", default = "4711", type = "string", regex = "^[0-9]+$" }
 
 [template]
 ignore = [
