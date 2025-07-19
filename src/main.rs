@@ -11,7 +11,7 @@ struct Cli {
 
 // This program reads a file line by line and prints each character
 fn main() -> io::Result<()> {
-    let file = File::open("src/faust-complete.txt")?;
+    let file = File::open("faust-complete.txt")?;
     let reader = BufReader::new(file);
 
     // reader.lines() is an iterator over the lines of the file
